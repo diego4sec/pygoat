@@ -1,0 +1,10 @@
+# .github/dependabot.yml
+version: 2
+updates:
+  - package-ecosystem: "pip"  # Because pygoat is a Python project
+    directory: "/"            # Location of requirements.txt or pyproject.toml
+    schedule:
+      interval: "weekly"      # Check for updates weekly
+    open-pull-requests-limit: 20
+    metadata:
+      - "update-type:security-updates"  # Always get security updates
